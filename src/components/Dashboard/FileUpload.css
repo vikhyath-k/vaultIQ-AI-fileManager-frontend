@@ -1,0 +1,73 @@
+.upload-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #e5e7eb;
+}
+
+.upload-title {
+  margin-bottom: 1rem;
+  color: #1a2236;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.upload-dropzone {
+  border: 2px dashed #d1d5db;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f9fafb;
+}
+
+.upload-dropzone.drag-over {
+  border-color: #4fd1c5;
+  background: #f0fdfa;
+}
+
+.upload-input {
+  display: none;
+}
+
+.upload-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  color: #4fd1c5;
+}
+
+.upload-text {
+  margin-top: 0.5rem;
+}
+
+.upload-text-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.upload-text-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.upload-encryption-notice {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-encryption-icon {
+  color: #4fd1c5;
+  font-weight: 600;
+} 

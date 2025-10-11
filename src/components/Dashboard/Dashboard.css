@@ -1,0 +1,128 @@
+.dashboard {
+  width: 100%;
+  height: 100%;
+  background: #f4f6fa;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 1.18rem;
+  font-weight: 600;
+  gap: 0.2rem;
+  position: sticky;
+  top: 0;
+  background: #f4f6fa;
+  z-index: 2;
+  padding: 0 0 0.5rem 0;
+  margin: 0 0 0.7rem 0;
+  min-height: 2.2rem;
+  box-sizing: border-box;
+}
+.breadcrumb-segment {
+  cursor: pointer;
+  color: #1a2236;
+  font-weight: 500;
+  transition: color 0.18s, font-weight 0.18s;
+}
+.breadcrumb-segment:first-child {
+  color: #4fd1c5;
+  font-weight: 700;
+}
+.breadcrumb-segment:last-child {
+  cursor: default;
+}
+.breadcrumb-segment:hover:not(:last-child) {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  margin: 0 0.3rem;
+  color: #b0b7c3;
+}
+.breadcrumb-upload {
+  display: flex;
+  align-items: center;
+  margin-left: 0.7rem;
+  background: #e3f2fd;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  transition: background 0.18s;
+  color: #2196f3;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.breadcrumb-upload:hover {
+  background: #bbdefb;
+}
+
+.dashboard-table-container {
+  margin-top: 0.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(79, 209, 197, 0.07);
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+.dashboard-file-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1rem;
+}
+.dashboard-file-table th {
+  background: #f9fafb;
+  color: #1a2236;
+  font-weight: 700;
+  border-bottom: 2px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.dashboard-file-table th, .dashboard-file-table td {
+  padding: 0.45rem 0.7rem;
+  text-align: left;
+  height: 2.1rem;
+}
+.dashboard-file-row {
+  transition: background 0.13s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+}
+.dashboard-file-row:hover {
+  background: #e3f2fd;
+  transition: background 0.18s cubic-bezier(0.4,0,0.2,1);
+}
+.dashboard-summary-tooltip {
+  background: #181818;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  padding: 1rem 1.2rem;
+  min-width: 260px;
+  max-width: 340px;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0.98;
+  border: none;
+  animation: fadeInTooltip 0.18s;
+  z-index: 1000;
+}
+@keyframes fadeInTooltip {
+  from { opacity: 0; transform: translate(-50%, -90%); }
+  to { opacity: 0.97; transform: translate(-50%, -110%); }
+}
+
+.filename-wrapper {
+  position: relative;
+  display: inline-block;
+} 

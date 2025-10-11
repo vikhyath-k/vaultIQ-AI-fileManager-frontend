@@ -1,0 +1,71 @@
+.tag-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag-filter-header {
+  margin-bottom: 0.5rem;
+}
+
+.tag-filter-header span {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.tag-filter-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.tag-filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+  transition: color 0.2s;
+}
+
+.tag-filter-label:hover {
+  color: #4fd1c5;
+}
+
+.tag-filter-checkbox {
+  margin: 0;
+  cursor: pointer;
+}
+
+.tag-filter-text {
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.tag-filter-selected {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.tag-filter-selected span {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.tag-filter-selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.tag-filter-selected-tag {
+  background: #4fd1c5;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+} 

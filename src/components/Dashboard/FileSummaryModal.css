@@ -1,0 +1,166 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.modal-title {
+  margin: 0;
+  color: #1a2236;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.modal-close-button:hover {
+  color: #1a2236;
+}
+
+.modal-content {
+  padding: 1.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-file-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.modal-file-icon {
+  font-size: 2rem;
+  color: #4fd1c5;
+}
+
+.modal-file-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a2236;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.modal-file-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.modal-section {
+  margin-bottom: 1.5rem;
+}
+
+.modal-section h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1a2236;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.modal-section p {
+  margin: 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.modal-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.modal-download-button {
+  background: #4fd1c5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.modal-download-button:hover {
+  background: #38b2ac;
+}
+
+.modal-delete-button {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.modal-delete-button:hover {
+  background: #c53030;
+}
+
+.modal-button-icon {
+  margin-right: 0.5rem;
+} 
